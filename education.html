@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobster</title>
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- tailwind an daisy UI -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- icons -->
+
+    <script src="https://kit.fontawesome.com/7ff9b0e562.js" crossorigin="anonymous"></script>
+
+</head>
+
+<!-- body -->
+
+<body class="poppins-font bg-gradient-to-t from-[#3D52A1] to-[#EFE9F3]">
+
+    <!-- header -->
+
+    <header class="lg:ml-20 ml-4 lg:mr-20 mr-4">
+
+        <!-- nav bar -->
+
+        <div class="navbar  bg-opacity-90 pt-3">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] flex justify-center items-center p-5 shadow bg-base-100 rounded-box w-64 text-lg font-bold">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="job.html">Job Info</a></li>
+                        <li><a href="education.html">Education</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assats/Logo.JPG" class="h-10" alt="">
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu text-black menu-horizontal px-1 text-lg font-bold">
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="index.html">Home</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="about.html">About</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="job.html">Job Info</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="education.html">Education</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-4">
+                <a href="login.html" class="btn font-bold bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white">Log
+                    in</a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- main -->
+
+    <main>
+
+        <!-- field choose -->
+
+        <section
+            class="choose-field mt-20 py-16 bg-gradient-to-r from-[#C2CCFF] to-[#EFE9F3] lg:ml-20 ml-4 lg:mr-20 mr-4 rounded-xl">
+
+            <div>
+                <h2 class="text-center lg:text-5xl text-[#102040] text-3xl font-extrabold">
+                    Choose Your field
+                </h2>
+                <p class="mt-5 text-center lg:px-5 px-0">
+                    Welcome to Jobster, your gateway to comprehensive educational resources and innovative learning
+                    solutions designed to empower students, educators, and lifelong learners in their academic and
+                    professional journeys.
+                </p>
+            </div>
+            <!-- grand mother div -->
+
+            <div class="flex mt-10">
+                <!-- mother div -->
+                <div
+                    class="w-full flex justify-between items-center lg:flex-row flex-col border-2 border-black lg:p-4 m-6 gap-2">
+
+                    <!-- child-1 -->
+
+                    <div
+                        class="w-full flex justify-center items-cente border-2 lg:border-x-2 border-black bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white">
+                        <h1 class="text-2xl text-white font-bold">
+                            <button onclick="SeeClasses(event)">School</button>
+                        </h1>
+                    </div>
+
+                    <!-- child-2 -->
+
+                    <div
+                        class="w-full flex justify-center items-center border-2 lg:border-x-2 border-black bg-gradient-to-l  from-[#bf7dea] to-[#202853] text-white">
+                        <h1 class="text-2xl text-white font-bold">
+                            <button onclick="SeeCollege(event)">
+                                College
+                            </button>
+                        </h1>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- school div -->
+
+            <section id="primary-secondary" class="hidden">
+                <div class="mt-5 lg:p-4 border-2 border-black m-6">
+
+                    <div>
+                        <h1 class="lg:text-5xl text-3xl font-bold flex justify-center text-[#102040] items-center mt-5">
+                            Primary Level :
+                        </h1>
+                    </div>
+
+                    <div class="flex lg:flex-row flex-col justify-between items-center lg:px-10 px-0 gap-5 mt-10">
+
+                        <div>
+                            <div class="card w-72 lg:w-96 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="assats/class1.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title text-[#102040]">Class-1</h2>
+                                    <p>We inspire school students with interactive lessons, comprehensive study materials.</p>
+                                    <div class="card-actions">
+                                        <button
+                                            class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white mb-6">Explore
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card w-72 lg:w-96 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="assats/class2.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title text-[#102040]">Class-2</h2>
+                                    <p>We inspire school students with interactive lessons, comprehensive study materials.</p>
+                                    <div class="card-actions">
+                                        <button
+                                            class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white mb-6">Explore
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card w-72 lg:w-96 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="assats/class3.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title text-[#102040]">Class-3</h2>
+                                    <p>We inspire school students with interactive lessons, comprehensive study materials.</p>
+                                    <div class="card-actions">
+                                        <button
+                                            class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white mb-6">Explore
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="flex lg:flex-row flex-col justify-center items-center mt-4 gap-5 lg:gap-20 lg:mt-10 mb-5">
+
+
+                        <div>
+                            <div class="card w-72 lg:w-96 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="assats/class-4.jpeg" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title text-[#102040]">Class-4</h2>
+                                    <p>We inspire school students with interactive lessons, comprehensive study materials.</p>
+                                    <div class="card-actions">
+                                        <button
+                                            class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white mb-6">Explore
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card w-72 lg:w-96 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="assats/class-5.jpeg" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title text-[#102040]">Class-5</h2>
+                                    <p>We inspire school students with interactive lessons, comprehensive study materials.</p>
+                                    <div class="card-actions">
+                                        <button
+                                            class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white mb-6">Explore
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="mt-5 lg:p-4 border-2 border-black m-6">
+
+                    <div>
+                        <h1 class="lg:text-5xl text-3xl text-[#102040] font-bold flex justify-center items-center mt-5">
+                            Secondary Level :
+                        </h1>
+                    </div>
+
+                    <div class="flex lg:flex-row flex-col justify-between items-center lg:px-10 px-0 gap-5 mt-10">
+
+                        <div>
+                            <div class="card w-72 lg:w-96 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="assats/class-6.jpeg" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title text-[#102040]">Class-6</h2>
+                                    <p>We inspire school students with interactive lessons, comprehensive study materials.</p>
+                                    <div class="card-actions">
+                                        <button
+                                            class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white mb-6">Explore
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card w-72 lg:w-96 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="assats/class-7.jpeg" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title text-[#102040]">Class-7</h2>
+                                    <p>We inspire school students with interactive lessons, comprehensive study materials.</p>
+                                    <div class="card-actions">
+                                        <button
+                                            class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white mb-6">Explore
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card w-72 lg:w-96 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="assats/class-8.jpeg" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title text-[#102040]">Class-8</h2>
+                                    <p>We inspire school students with interactive lessons, comprehensive study materials.</p>
+                                    <div class="card-actions">
+                                        <button
+                                            class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white mb-6">Explore
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="flex lg:flex-row flex-col justify-center items-center mt-4 gap-5 lg:gap-20 lg:mt-10 mb-5">
+
+
+                        <div>
+                            <div class="card w-72 lg:w-96 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="assats/class-9.jpeg" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title text-[#102040]">class-9</h2>
+                                    <p>We inspire school students with interactive lessons, comprehensive study materials.</p>
+                                    <div class="card-actions">
+                                        <button
+                                            class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white mb-6">Explore
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card w-72 lg:w-96 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="assats/class-9.jpeg" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title text-[#102040]">Class-10</h2>
+                                    <p>We inspire school students with interactive lessons, comprehensive study materials.</p>
+                                    <div class="card-actions">
+                                        <button
+                                            class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white mb-6">Explore
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="flex justify-center items-center">
+                    <button class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white "><a
+                            href="education.html">Back</a></button>
+                </div>
+            </section>
+
+            <!-- college div -->
+
+            <section id="college" class="hidden">
+                <div class="mt-5 lg:p-4 border-2 border-black m-6">
+
+                    <div>
+                        <h1 class="lg:text-5xl text-3xl font-bold text-[#102040] flex justify-center items-center mt-5">
+                            Higher Secondary :
+                        </h1>
+                    </div>
+
+                    <div class="flex lg:flex-row flex-col justify-between items-center lg:px-10 px-0 gap-5 mt-10">
+
+                        <div>
+                            <div class="card w-72 lg:w-96 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="assats/hsc.jpeg" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title text-[#102040]">Science</h2>
+                                    <p>We inspire school students with interactive lessons, comprehensive study materials.</p>
+                                    <div class="card-actions">
+                                        <button
+                                            class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white mb-6">Explore
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card w-72 lg:w-96 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="assats/hsc.jpeg" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title text-[#102040]">Business</h2>
+                                    <p>We inspire school students with interactive lessons, comprehensive study materials.</p>
+                                    <div class="card-actions">
+                                        <button
+                                            class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white mb-6">Explore
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card w-72 lg:w-96 bg-base-100 shadow-xl ">
+                                <figure class="px-10 pt-10">
+                                    <img src="assats/hsc.jpeg" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title text-[#102040]">Humanity</h2>
+                                    <p>We inspire school students with interactive lessons, comprehensive study materials.</p>
+                                    <div class="card-actions">
+                                        <button
+                                            class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white mb-6">Explore
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="flex justify-center items-center mt-5">
+                        <button class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white "><a
+                                href="education.html">Back</a></button>
+                    </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+
+        <footer
+            class=" lg:pl-30 lg:pr-30 pt-10 pb-10 lg:pl-36 footer bg-[#001529] text-base-content lg:flex lg:justify-between mt-10">
+            <aside class="w-full">
+                <h2 class="lg:text-3xl text-xl text-center w-full lg:text-left text-[#FFF] font-extrabold">
+                    Get In Touch
+                </h2>
+                <p class=" p-4 text-center w-full lg:text-left text-[#ffffff99] font-medium text-base mt-4">
+                    To connect with us, you can follow our facebook page, subscribe our youtube channel, follow us in
+                    insta
+                    and twitter.
+                    also ypu can share your experience in our email section.
+                </p>
+                <p class=" text-center w-full lg:text-left font-medium text-[#FFF] mt-6">
+                    <i class="fa-regular fa-envelope text-[#FF4240]"></i>
+                    ashikpullock99@gmail.com
+                </p>
+                <p class=" text-center w-full lg:text-left font-medium text-[#FFF] mt-3">
+                    <i class="fa-solid fa-phone text-[#FF4240]"></i>
+                    (+88) 01624-334044
+                </p>
+            </aside>
+            <div
+                class="w-full flex justify-evenly lg:justify-between  items-center md:justify-between flex-row xl:justify-between 2xl:justify-between">
+                <nav class=" flex flex-col justify-between items-center">
+                    <header class=" text-[#FFF] font-bold text-xl mb-7">Company</header>
+                    <a class="link link-hover font-medium text-[#ffffff99]">About us</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Leadership</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Careers</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">News & Article</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Legal Notice</a>
+                </nav>
+                <nav class=" flex flex-col justify-between items-center">
+                    <header class=" text-[#FFF] font-bold text-xl mb-8">Support</header>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1 ">Help Center</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">FAQ</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">Ticket Support</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">Contact Us</a>
+                </nav>
+            </div>
+            <nav class="w-full">
+                <header class=" text-center w-full    text-[#FFF] lg:text-center font-bold text-xl mb-7">Services
+                </header>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Academy</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Group
+                    Lesson</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Private
+                    Lesson</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Hockeys for
+                    kids</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Hockeys for
+                    Adult</a>
+            </nav>
+        </footer>
+
+
+    </footer>
+
+
+    <script src="edu.js"></script>
+
+</body>
+
+</html>

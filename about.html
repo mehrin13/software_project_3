@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobster</title>
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- tailwind an daisy UI -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- icons -->
+
+    <script src="https://kit.fontawesome.com/7ff9b0e562.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="poppins-font bg-gradient-to-t from-[#3D52A1] to-[#EFE9F3]">
+
+    <!-- header -->
+
+    <header class="lg:ml-20 ml-4 lg:mr-20 mr-4">
+
+        <!-- nav section -->
+
+        <div class="navbar  bg-opacity-90 pt-3">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] flex justify-center items-center p-5 shadow bg-base-100 rounded-box w-64 text-lg font-bold">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="job.html">Job Info</a></li>
+                        <li><a href="education.html">Education</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assats/Logo.JPG" class="h-10" alt="">
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu text-black menu-horizontal px-1 text-lg font-bold">
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="index.html">Home</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="about.html">About</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="job.html">Job Info</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="education.html">Education</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-4">
+                <a href="login.html" class="btn font-bold bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white">Log
+                    in</a>
+            </div>
+        </div>
+
+        <!-- hero section -->
+
+        <div class="hero lg:h-96 h-80 lg:mt-2 mt-4 bg-cover"
+            style="background-image: url(assats/team-business-people-stacking-hands.jpg);">
+            <div class="hero-overlay bg-opacity-70"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                    <h1 class="mb-5 lg:text-5xl text-3xl text-white font-bold">Hello there</h1>
+                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                        exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button
+                        class="btn btn-wide text-black  bg-gradient-to-l from-[#C2CCFF] to-[#E5EBF2] hover:bg-white"><i
+                            class="fa-solid fa-magnifying-glass"></i> Search</button>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- main -->
+
+    <main>
+
+        <!-- about section -->
+
+        <section
+            class="about mt-20 py-16 bg-gradient-to-r from-[#C2CCFF] to-[#EFE9F3] lg:ml-20 ml-4 lg:mr-20 mr-4 rounded-xl">
+
+            <div>
+                <h2 class="text-center lg:text-5xl text-3xl text-[#102040] font-extrabold">
+                    About Us
+                </h2>
+                <p class="mt-5 text-center px-5 lg:px-0">
+                    Welcome to Jobster, where education meets career advancement. Our platform is dedicated to bridging
+                    the gap between <br> academic achievement and professional success.
+                </p>
+            </div>
+
+            <div class="mt-20 lg:ml-20 ml-4 lg:mr-20  mr-4">
+
+                <div class="flex lg:flex-col flex-col justify-center items-center lg:gap-16 gap-10">
+                    <!-- card-1 -->
+                    <div class="lg:px-10 lg:py-10 bg-[#F1EAF4] rounded-xl">
+                        <div class="hero-content flex flex-col lg:flex-row-reverse lg:gap-40 gap-10">
+                            <div class="lg:w-1/3">
+                                <img src="assats/professions-avatars-line-banner-set_1284-34918.jpg"
+                                    class=" rounded-lg shadow-2xl" />
+                            </div>
+                            <div class="w-2/3 text-center lg:text-start">
+                                <h1 class="lg:text-5xl text-3xl text-[#102040] font-bold">Job Info</h1>
+                                <p class="py-6 lg:block hidden">Welcome to Jobster, your premier destination for finding
+                                    the perfect job. We are committed to connecting job seekers with top employers
+                                    across various industries. Our platform offers a user-friendly interface, extensive
+                                    job listings, and valuable career resources to help you navigate the job market and
+                                    achieve your professional goals. Whether you're just starting out or looking to
+                                    advance your career, Jobster is here to support you every step of the way.</p>
+
+                                <p class="py-6 lg:hidden block">
+                                    Welcome to Jobster, your premier destination for finding the perfect job. We are
+                                    committed to connecting job seekers with top employers across various industries.
+                                </p>
+                                <button class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white mb-6"><a
+                                        href="job.html">Explore</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+
+                    <div class="lg:px-10 lg:py-10 bg-[#F1EAF4] rounded-xl">
+                        <div class="hero-content flex flex-col lg:flex-row lg:gap-40 gap-10">
+                            <div class="lg:w-1/3">
+                                <img src="assats/education.jpg" class=" rounded-lg shadow-2xl" />
+                            </div>
+                            <div class="w-2/3 text-center lg:text-start">
+                                <h1 class="lg:text-5xl text-3xl text-[#102040] font-bold">Education</h1>
+                                <p class="py-6 lg:block hidden">Welcome to Jobster, your trusted partner in education.
+                                    Our mission is to provide students, educators, and lifelong learners with
+                                    high-quality resources, innovative learning tools, and insightful guidance. We are
+                                    dedicated to fostering academic excellence, personal growth, and a passion for
+                                    learning. Explore our comprehensive educational content, tailored to support your
+                                    journey towards knowledge and success.</p>
+
+                                <p class="py-6 lg:hidden block">
+                                    Welcome to Jobster, your trusted partner in education. Our mission is to provide
+                                    students, educators, and lifelong learners with high-quality resources, innovative
+                                    learning tools, and insightful guidance.
+                                </p>
+                                <button class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white mb-6"><a
+                                        href="education.html">Explore</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- team -->
+
+        <section
+            class="about mt-20 py-16 bg-gradient-to-l from-[#C2CCFF] to-[#EFE9F3] lg:ml-20 ml-4 lg:mr-20 mr-4 rounded-xl">
+
+            <div>
+                <h2 class="text-center lg:text-5xl text-3xl text-[#102040] font-extrabold">
+                    Meet Our Team
+                </h2>
+                <p class="mt-5 text-center px-5 lg:px-0">
+                    Meet our dedicated team of career and education experts, passionate about guiding you towards
+                    academic <br> excellence and professional success.
+                </p>
+            </div>
+
+            <!-- team card -->
+
+
+
+            <div class="lg:ml-48 ml-5 lg:mr-48 mr-5 mt-20">
+                <div class="flex flex-col justify-center items-center lg:flex-row lg:gap-16 gap-10 mb-10">
+                    <!-- card-1 -->
+                    <div class="card lg:w-96 w-72 shadow-indigo-300 shadow-2xl">
+                        <figure class="px-10 pt-10">
+                            <img src="assats/ashik.jpg" alt="User" class="rounded-full h-20 w-20" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-[#102040]">Syed Ashik Mahmud Pullock</h2>
+                            <p>Our visionary founder with a passion for integrating education and career development.
+                            </p>
+                            <div class="card-actions gap-5">
+                                <a href="https://www.facebook.com/mahmudashik.pullock/" target="_blank"
+                                    class="text-[#3D52A1] hover:text-red-800"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://github.com/Pullock4981" target="_blank"
+                                    class="text-[#3D52A1] hover:text-red-800"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/ashikpullock/" target="_blank"
+                                    class="text-[#3D52A1] hover:text-red-800"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="card lg:w-96 w-72 shadow-indigo-300 shadow-2xl">
+                        <figure class="px-10 pt-10">
+                            <img src="assats/ripa.jpg" alt="User" class="rounded-full h-20 w-20" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-[#102040]">Shahrima Akter Ripa</h2>
+                            <p>Expert in career counseling and dedicated to helping you achieve your professional
+                                goals.?</p>
+                            <div class="card-actions gap-5">
+                                <a href="https://www.facebook.com/sinthiya.rahman.1610?mibextid=ZbWKwL" target="_blank"
+                                    class="text-[#3D52A1] hover:text-red-800"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://github.com/Ripadiu?fbclid=IwZXh0bgNhZW0CMTAAAR0NCF0FizyZAGLrIVdQMrPXnA9g3FKzMnjsWRGDHzT5qA3tpLRhgBZAF48_aem_ZmFrZWR1bW15MTZieXRlcw"
+                                    target="_blank" class="text-[#3D52A1] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/shahrima-ripa-86a38723b/?fbclid=IwZXh0bgNhZW0CMTAAAR3KMpUGAIAav6skqUOYabUQFdfDV95kK5wGigXNVQxCe8_D4zR1MosJjFQ_aem_ZmFrZWR1bW15MTZieXRlcw"
+                                    target="_blank" class="text-[#3D52A1] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class=" flex flex-col lg:flex-row justify-between items-center lg:gap-16 gap-10 mt-10">
+                    <!-- card-3 -->
+                    <div class="card lg:w-96 w-72 shadow-indigo-300 shadow-2xl">
+                        <figure class="px-10 pt-10">
+                            <img src="assats/rakib.jpg" alt="User" class="rounded-full h-20 w-20" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-[#102040]">Rakib Hasan</h2>
+                            <p>Education specialist focused on providing top-notch learning resources and support.</p>
+                            <div class="card-actions gap-5">
+                                <a href="https://www.facebook.com/mdrakib.alhasan.7771" target="_blank"
+                                    class="text-[#3D52A1] hover:text-red-800"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://github.com/Rakibulhasan88" target="_blank"
+                                    class="text-[#3D52A1] hover:text-red-800"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/rakibul-hasan-b9a84b306/" target="_blank"
+                                    class="text-[#3D52A1] hover:text-red-800"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-4 -->
+                    <div class="card lg:w-96 w-72 shadow-indigo-300 shadow-2xl">
+                        <figure class="px-10 pt-10">
+                            <img src="assats/nafi.jpg" alt="User" class="rounded-full h-20 w-20" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-[#102040]">Nafian Khan Mojlish</h2>
+                            <p>Marketing guru ensuring our resources and opportunities reach those who need them most.
+                            </p>
+                            <div class="card-actions gap-5">
+                                <a href="https://www.facebook.com/nafian.khan.14" target="_blank"
+                                    class="text-[#3D52A1] hover:text-red-800"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://github.com/Nafian06?fbclid=IwZXh0bgNhZW0CMTAAAR2_e-vQO5JVmH6MS8D4RGlo-adOLB0eFHsrl2R73How3atqMFh6r4W5Zg4_aem_ZmFrZWR1bW15MTZieXRlcw"
+                                    target="_blank" class="text-[#3D52A1] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/nafian-khan-mojlish-8a7074243/?fbclid=IwZXh0bgNhZW0CMTAAAR2IsZtOXVu4u6PF9j8NJnPoIpXRODtwAgSoxghOD2BsvNGoDWMQUsnmEHc_aem_ZmFrZWR1bW15MTZieXRlcw"
+                                    target="_blank" class="text-[#3D52A1] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-5 -->
+                    <div class="card lg:w-96 w-72 shadow-indigo-300 shadow-2xl">
+                        <figure class="px-10 pt-10">
+                            <img src="assats/tanmoy.jpg" alt="User" class="rounded-full h-20 w-20" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-[#102040]">Tonmoy Shahriar</h2>
+                            <p>Tech wizard behind our user-friendly platform, making your job and learning journey
+                                seamless.</p>
+                            <div class="card-actions gap-5">
+                                <a href="https://www.facebook.com/profile.php?id=100007932645208" target="_blank"
+                                    class="text-[#3D52A1] hover:text-red-800"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://github.com/TonmoyShahriar23?fbclid=IwZXh0bgNhZW0CMTAAAR3KGTmdCu-hCfX4aiJJkWIrhYi_sZy06psCl00tApn6LX-gxh_yi6UsMwM_aem_ZmFrZWR1bW15MTZieXRlcw"
+                                    target="_blank" class="text-[#3D52A1] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/tonmoy-shahriar-479a8730b/?fbclid=IwZXh0bgNhZW0CMTAAAR0w0vseHu4Cx2ex7rvX11grfg1vtqFe5HRggTVwu8NzbNjdd-R0qmhGq0M_aem_ZmFrZWR1bW15MTZieXRlcw"
+                                    target="_blank" class="text-[#3D52A1] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+
+        <!-- footer section -->
+
+        <footer
+            class=" pl-30 pr-30 pt-10 pb-10 lg:pl-36 footer bg-[#001529] text-base-content lg:flex lg:justify-between mt-10">
+            <aside class="w-full">
+                <h2 class="lg:text-3xl text-xl text-center w-full lg:text-left text-[#FFF] font-extrabold">
+                    Get In Touch
+                </h2>
+                <p class=" p-4 text-center w-full lg:text-left text-[#ffffff99] font-medium text-base mt-4">
+                    To connect with us, you can follow our facebook page, subscribe our youtube channel, follow us in
+                    insta
+                    and twitter.
+                    also ypu can share your experience in our email section.
+                </p>
+                <p class=" text-center w-full lg:text-left font-medium text-[#FFF] mt-6">
+                    <i class="fa-regular fa-envelope text-[#FF4240]"></i>
+                    ashikpullock99@gmail.com
+                </p>
+                <p class=" text-center w-full lg:text-left font-medium text-[#FFF] mt-3">
+                    <i class="fa-solid fa-phone text-[#FF4240]"></i>
+                    (+88) 01624-334044
+                </p>
+            </aside>
+            <div
+                class="w-full flex justify-evenly lg:justify-between  items-center md:justify-between flex-row xl:justify-between 2xl:justify-between">
+                <nav class=" flex flex-col justify-between items-center">
+                    <header class=" text-[#FFF] font-bold text-xl mb-7">Company</header>
+                    <a class="link link-hover font-medium text-[#ffffff99]">About us</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Leadership</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Careers</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">News & Article</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Legal Notice</a>
+                </nav>
+                <nav class=" flex flex-col justify-between items-center">
+                    <header class=" text-[#FFF] font-bold text-xl mb-8">Support</header>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1 ">Help Center</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">FAQ</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">Ticket Support</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">Contact Us</a>
+                </nav>
+            </div>
+            <nav class="w-full">
+                <header class=" text-center w-full    text-[#FFF] lg:text-center font-bold text-xl mb-7">Services
+                </header>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Academy</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Group
+                    Lesson</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Private
+                    Lesson</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Hockeys for
+                    kids</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Hockeys for
+                    Adult</a>
+            </nav>
+        </footer>
+
+    </footer>
+
+
+    <!-- js file -->
+
+    <!-- <script src="tailwind.config.js"></script> -->
+</body>
+
+</html>

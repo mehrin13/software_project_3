@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobster</title>
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- tailwind an daisy UI -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- icons -->
+
+    <script src="https://kit.fontawesome.com/7ff9b0e562.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="poppins-font bg-gradient-to-t from-[#3D52A1] to-[#EFE9F3]">
+
+    <!-- header -->
+
+    <header class="lg:ml-20 ml-4 lg:mr-20 mr-4">
+
+        <!-- nav section -->
+
+        <div class="navbar  bg-opacity-90 pt-3">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] flex justify-center items-center p-5 shadow bg-base-100 rounded-box w-64 text-lg font-bold">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="job.html">Job Info</a></li>
+                        <li><a href="education.html">Education</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assats/Logo.JPG" class="h-10" alt="">
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu text-black menu-horizontal px-1 text-lg font-bold">
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="index.html">Home</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="about.html">About</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="job.html">Job Info</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="education.html">Education</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-4">
+                <a href="login.html" class="btn font-bold bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white">Log
+                    in</a>
+            </div>
+        </div>
+
+        <!-- hero section -->
+
+        <div class="hero lg:h-96 h-80 lg:mt-2 mt-4"
+            style="background-image: url(assats/top-view-digital-tablet-with-search-job-screen-male-hands.jpg);">
+            <div class="hero-overlay bg-opacity-70"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                    <h1 class="mb-5 lg:text-5xl text-3xl text-white font-bold">Job Sector</h1>
+                    <p class="mb-5">
+                        FIND THE JOB THAT FITS YOUR LIFE
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- main -->
+
+    <main>
+
+        <section
+            class="about mt-20 py-16 bg-gradient-to-b from-[#a5aed7] to-[#e4d9ed]  lg:ml-20 ml-4 lg:mr-20 mr-4 rounded-xl">
+
+            <div>
+                <h2 class="text-center lg:text-5xl text-3xl text-[#102040] font-extrabold">
+                    Choose Your Field
+                </h2>
+                <p class="mt-5 text-center px-5 lg:px-0">
+                    Forget the old rules. You can find your job here.
+                </p>
+            </div>
+
+            <!-- job card -->
+
+
+
+            <div class="lg:ml-48 ml-5 lg:mr-48 mr-5 mt-20">
+                <div class="flex flex-col lg:flex-row justify-between items-center lg:gap-16 gap-10 mb-10">
+                    <!-- card-1 -->
+                    <div class="card lg:w-1/2  bg-slate-200 shadow-xl">
+
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-[#102040] text-2xl">KDS Group</h2>
+                            <p>KDS Group is one of the most renowned business and industrial conglomerates of
+                                Bangladesh.</p>
+                            <button class="btn lg:btn-lg bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white"><a
+                                    target="_blank"
+                                    href="https://www.kdsaccessories.com/about-us/kds-group">Apply</a></button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="card lg:w-1/2 bg-slate-200 shadow-xl">
+
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-[#102040] text-2xl">Marico bangladesh Limited </h2>
+                            <p>Marico Bangladesh Limited is amongst the top 3 FMCG MNC companies and a trusted brand in
+                                beauty and wellness space in Bangladesh.</p>
+                            <button class="btn lg:btn-lg bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white"><a
+                                    target="_blank" href="https://marico.com/bangladesh">Apply</a></button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- div-2 -->
+
+                <div class="flex flex-col lg:flex-row justify-between items-center lg:gap-16 gap-10 mb-10">
+                    <!-- card-1 -->
+                    <div class="card lg:w-1/2 bg-slate-200 shadow-xl">
+
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-[#102040] text-2xl">S Alam Group</h2>
+                            <p>S. Alam Group remains determined to achieve leadership in the country’s Industrial and
+                                Commercial</p>
+                            <button class="btn lg:btn-lg bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white"><a
+                                    target="_blank" href="https://www.s.alamgroupbd.com/">Apply</a></button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="card lg:w-1/2 bg-slate-200 shadow-xl">
+
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-[#102040] text-2xl">Square Group</h2>
+                            <p>Square Group is one of the largest conglomerates in Bangladesh. with diverse business
+                                interests.</p>
+                            <button class="btn lg:btn-lg bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white"><a
+                                    target="_blank" href="https://squaregroup.com/">Apply</a></button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- div-3 -->
+
+                <div class="flex flex-col lg:flex-row justify-between items-center lg:gap-16 gap-10 mb-10">
+                    <!-- card-1 -->
+                    <div class="card lg:w-1/2 bg-slate-200 shadow-xl">
+
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-[#102040] text-2xl">T.K. group of Industries</h2>
+                            <p>T.K. Group of Industries is a major Bangladeshi conglomerate known for its operations in
+                                the industrial sector.</p>
+                            <button class="btn lg:btn-lg bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white"><a
+                                    target="_blank" href="https://tkgroupbd.com/">Apply</a></button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="card lg:w-1/2 bg-slate-200 shadow-xl">
+
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-[#102040] text-2xl">Unilever bangladesh Limited</h2>
+                            <p>Unilever Bangladesh Limited is a subsidiary of the global consumer goods company
+                                Unilever. It is one of the largest FMCG.</p>
+                            <button class="btn lg:btn-lg bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white"><a
+                                    target="_blank" href="https://www.unilever.com.bd/">Apply</a></button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- div-4  -->
+
+                <div class="flex flex-col lg:flex-row justify-between items-center lg:gap-16 gap-10 mb-10">
+                    <!-- card-1 -->
+                    <div class="card lg:w-1/2 bg-slate-200 shadow-xl">
+
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-[#102040] text-2xl">Advertising agency in Bangladesh</h2>
+                            <p>The advertising industry in Bangladesh is vibrant and growing, with numerous agencies
+                                offering a range of services.</p>
+                            <button class="btn lg:btn-lg bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white"><a
+                                    target="_blank" href="https://clutch.co/bd/agencies">Apply</a></button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="card lg:w-1/2 bg-slate-200 shadow-xl">
+
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-[#102040] text-2xl">Aftab Group</h2>
+                            <p>Aftab Group is a diversified conglomerate in Bangladesh with interests in textiles, food
+                                processing, and real estate, among other sectors.</p>
+                            <button class="btn lg:btn-lg bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white"><a
+                                    target="_blank" href="https://www.aftabgroup.com.bd/">Apply</a></button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- div-5 -->
+
+                <div class="flex flex-col lg:flex-row justify-between items-center lg:gap-16 gap-10 mb-10">
+                    <!-- card-1 -->
+                    <div class="card lg:w-1/2 bg-slate-200 shadow-xl">
+
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-[#102040] text-2xl">Emami bangladesh Ltd</h2>
+                            <p>Emami Bangladesh Ltd is a subsidiary of the Indian multinational Emami Limited, known for
+                                its health and personal care products.</p>
+                            <button class="btn lg:btn-lg bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white"><a
+                                    target="_blank"
+                                    href="https://www.emamiltd.in/subsidiary_report/emami-bangladesh-limited/">Apply</a></button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="card lg:w-1/2 bg-slate-200 shadow-xl">
+
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-[#102040] text-2xl">Gemcon Group </h2>
+                            <p>Gemcon Group is a prominent business conglomerate in Bangladesh with diverse interests
+                                ranging.</p>
+                            <button class="btn lg:btn-lg bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white"><a
+                                    target="_blank"
+                                    href="https://rocketreach.co/gemcon-group-profile_b5d67802f42e3275">Apply</a></button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- div-6 -->
+
+                <div class="flex flex-col lg:flex-row justify-between items-center lg:gap-16 gap-10 mb-10">
+                    <!-- card-1 -->
+                    <div class="card lg:w-1/2 bg-slate-200 shadow-xl">
+
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-[#102040] text-2xl">Bashundhara Group</h2>
+                            <p>Bashundhara Group is one of the largest industrial conglomerates in Bangladesh, with
+                                operations spanning various sectors.</p>
+                            <button class="btn lg:btn-lg bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white"><a
+                                    target="_blank" href="https://www.bashundharagroup.com/">Apply</a></button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="card lg:w-1/2 bg-slate-200 shadow-xl">
+
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-[#102040] text-2xl">Beximco</h2>
+                            <p>Beximco Group is another major conglomerate in Bangladesh with diverse business
+                                interests, from textiles.</p>
+                            <button class="btn lg:btn-lg bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white"><a
+                                    target="_blank" href="https://www.beximco.com/">Apply</a></button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- div-7 -->
+
+                <div class="flex flex-col lg:flex-row justify-between items-center lg:gap-16 gap-10 mb-10">
+                    <!-- card-1 -->
+                    <div class="card lg:w-1/2 bg-slate-200 shadow-xl">
+
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-[#102040] text-2xl">Airtel Bangladesh
+                            </h2>
+                            <p>Airtel Bangladesh was a leading telecom operator in Bangladesh before merging with Robi
+                                Axiata Limited in 2016.</p>
+                            <button class="btn lg:btn-lg bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white"><a
+                                    target="_blank" href="https://www.bd.airtel.com/en">Apply</a></button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="card lg:w-1/2 bg-slate-200 shadow-xl">
+
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-[#102040] text-2xl">Akij</h2>
+                            <p>Akij is one of the largest lifestyle retail chains in Bangladesh, operated by BRAC, a
+                                prominent non-governmental organization.?</p>
+                            <button class="btn lg:btn-lg bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white"><a
+                                    target="_blank" href="https://akijbiri.com/career/">Apply</a></button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+
+        <!-- footer section -->
+
+        <footer
+            class=" pl-30 pr-30 pt-10 pb-10 lg:pl-36 footer bg-[#001529] text-base-content lg:flex lg:justify-between mt-10">
+            <aside class="w-full">
+                <h2 class="lg:text-3xl text-xl text-center w-full lg:text-left text-[#FFF] font-extrabold">
+                    Get In Touch
+                </h2>
+                <p class=" p-4 text-center w-full lg:text-left text-[#ffffff99] font-medium text-base mt-4">
+                    To connect with us, you can follow our facebook page, subscribe our youtube channel, follow us in
+                    insta
+                    and twitter.
+                    also ypu can share your experience in our email section.
+                </p>
+                <p class=" text-center w-full lg:text-left font-medium text-[#FFF] mt-6">
+                    <i class="fa-regular fa-envelope text-[#FF4240]"></i>
+                    ashikpullock99@gmail.com
+                </p>
+                <p class=" text-center w-full lg:text-left font-medium text-[#FFF] mt-3">
+                    <i class="fa-solid fa-phone text-[#FF4240]"></i>
+                    (+88) 01624-334044
+                </p>
+            </aside>
+            <div
+                class="w-full flex justify-evenly lg:justify-between  items-center md:justify-between flex-row xl:justify-between 2xl:justify-between">
+                <nav class=" flex flex-col justify-between items-center">
+                    <header class=" text-[#FFF] font-bold text-xl mb-7">Company</header>
+                    <a class="link link-hover font-medium text-[#ffffff99]">About us</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Leadership</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Careers</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">News & Article</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Legal Notice</a>
+                </nav>
+                <nav class=" flex flex-col justify-between items-center">
+                    <header class=" text-[#FFF] font-bold text-xl mb-8">Support</header>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1 ">Help Center</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">FAQ</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">Ticket Support</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">Contact Us</a>
+                </nav>
+            </div>
+            <nav class="w-full">
+                <header class=" text-center w-full    text-[#FFF] lg:text-center font-bold text-xl mb-7">Services
+                </header>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Academy</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Group
+                    Lesson</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Private
+                    Lesson</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Hockeys for
+                    kids</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Hockeys for
+                    Adult</a>
+            </nav>
+        </footer>
+
+    </footer>
+
+
+    <!-- js file -->
+
+    <!-- <script src="tailwind.config.js"></script> -->
+</body>
+
+</html>

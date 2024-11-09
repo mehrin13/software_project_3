@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobster</title>
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- tailwind an daisy UI -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- icons -->
+
+    <script src="https://kit.fontawesome.com/7ff9b0e562.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="poppins-font bg-gradient-to-t from-[#3D52A1] to-[#EFE9F3]">
+
+    <!-- header -->
+
+    <header class="lg:ml-20 ml-4 lg:mr-20 mr-4">
+
+        <!-- nav section -->
+
+        <div class="navbar  bg-opacity-90 pt-3">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] flex justify-center items-center p-5 shadow bg-base-100 rounded-box w-64 text-lg font-bold">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="job.html">Job Info</a></li>
+                        <li><a href="education.html">Education</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assats/Logo.JPG" class="h-10" alt="">
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu text-black menu-horizontal px-1 text-lg font-bold">
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="index.html">Home</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="about.html">About</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="job.html">Job Info</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="education.html">Education</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-4">
+                <a href="login.html" class="btn font-bold bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white">Log
+                    in</a>
+            </div>
+        </div>
+
+        <!-- hero section -->
+
+    </header>
+
+    <!-- main -->
+
+    <!-- Register Form -->
+    <main class="lg:ml-20 ml-4 lg:mr-20 mr-4 mt-20">
+        <section id="reg-form-section">
+            <div>
+                <h2 class="text-center lg:text-5xl text-3xl text-[#102040] font-extrabold">
+                    Register Here
+                </h2>
+                <p class="mt-5 text-center px-5 lg:px-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, expedita? Lorem ipsum dolor sit
+                    amet
+                    consectetur <br> adipisicing elit. Provident, in!
+                </p>
+            </div>
+            <div class="flex justify-center items-center mt-10">
+
+                <div class=" flex flex-col gap-5 items-center justify-center  lg:w-1/2 w-full rounded-xl py-10">
+                    <form onsubmit="takeData(event)" action="#non" method="post"
+                        class="w-full max-w-md bg-[#ADBADA] rounded-lg shadow-md p-8">
+                        <p class="text-gray-700 mb-4">Note: All fields are required.</p>
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <input id="first-name" type="text" placeholder="First Name" required
+                                class="border border-gray-300  rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
+                            <input id="last-name" type="text" placeholder="Last Name" required
+                                class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
+                        </div>
+                        <input id="email" type="email" placeholder="Email Address" required
+                            class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+                        <input id="password" type="password" placeholder="Password" required
+                            class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+                        <input id="verify-password" type="password" placeholder="Verify Password" required
+                            class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+
+                        <div class="flex items-center mb-4">
+                            <input type="checkbox" id="register-agree"
+                                class="rounded border-gray-300 focus:ring focus:border-blue-300" required>
+                            <label for="register-agree" class="ml-2 block text-sm text-gray-900">
+                                Do you agree to the <a href="#" class="text-[#a84ae6]">terms and conditions?</a>
+                            </label>
+                        </div>
+
+
+                        <div class="flex justify-center items-center">
+                            <button type="submit"
+                                class="bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white font-semibold px-4 py-2 rounded-md transition duration-300">
+
+                                Register Now
+
+                            </button>
+                        </div>
+
+                    </form>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- user profile -->
+
+        <section id="user-info" class="user profile hidden">
+            <section class="user flex justify-center items-center mt-10 ml-4 mr-4 lg:ml-0 lg:mr-0">
+
+                <div class="lg:w-1/2 w-full bg-white  h-1/2 border-4 rounded-xl">
+
+                    <h2 class="flex justify-center text-[#102040] items-center text-2xl font-extrabold mt-10">
+                        My profile Information
+                    </h2>
+
+                    <div class="flex flex-col lg:ml-24 ml-6 gap-2 mt-10 p-10">
+
+                        <h2 class="text-lg font-bold">
+                            First Name : <span class="font-medium text-base ml-5" id="Take-first-name"></span>
+                        </h2>
+                        <h2 class="text-lg font-bold">
+                            Last Name : <span class="font-medium text-base ml-5" id="Take-last-name"></span>
+                        </h2>
+                        <h2 class="text-lg font-bold">
+                            Email : <span class="font-medium text-base ml-5" id="Take-Email"></span>
+                        </h2>
+                        <h2 class="text-lg font-bold">
+                            Password : <span class="font-medium text-base ml-5" id="Take-pass"></span>
+                        </h2>
+                        <h2 class="text-lg font-bold">
+                            Confirm Pass : <span class="font-medium text-base" id="Take-confirm-pass"></span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class=" flex justify-center items-center mt-6 gap-4 lg:gap-20">
+                <div>
+                    <a href="registration.html">
+                        <button class="btn bg-green-600 text-white hover:bg-green-600">Update</button>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <button class="btn bg-rose-600 text-white hover:bg-rose-600">Delete</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- <div class="w-full sm:w-1/2 px-3">
+            <div class="mb-5">
+                <label for="date" class="block font-medium text-gray-700">Date</label>
+                <input
+                    type="date"
+                    name="date"
+                    id="date"
+                    class="formbold-form-input"
+                />
+            </div>
+        </div> -->
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+
+        <!-- footer section -->
+
+        <footer
+            class=" pl-30 lg:pr-30 pt-10 pb-10 lg:pl-36 footer bg-[#001529] text-base-content lg:flex lg:justify-between mt-10">
+            <aside class="w-full">
+                <h2 class="lg:text-3xl text-xl text-center w-full lg:text-left text-[#FFF] font-extrabold">
+                    Get In Touch
+                </h2>
+                <p class=" p-4 text-center w-full lg:text-left text-[#ffffff99] font-medium text-base mt-4">
+                    To connect with us, you can follow our facebook page, subscribe our youtube channel, follow us in
+                    insta
+                    and twitter.
+                    also ypu can share your experience in our email section.
+                </p>
+                <p class=" text-center w-full lg:text-left font-medium text-[#FFF] mt-6">
+                    <i class="fa-regular fa-envelope text-[#FF4240]"></i>
+                    ashikpullock99@gmail.com
+                </p>
+                <p class=" text-center w-full lg:text-left font-medium text-[#FFF] mt-3">
+                    <i class="fa-solid fa-phone text-[#FF4240]"></i>
+                    (+88) 01624-334044
+                </p>
+            </aside>
+            <div
+                class="w-full flex justify-evenly lg:justify-between  items-center md:justify-between flex-row xl:justify-between 2xl:justify-between">
+                <nav class=" flex flex-col justify-between items-center">
+                    <header class=" text-[#FFF] font-bold text-xl mb-7">Company</header>
+                    <a class="link link-hover font-medium text-[#ffffff99]">About us</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Leadership</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Careers</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">News & Article</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Legal Notice</a>
+                </nav>
+                <nav class=" flex flex-col justify-between items-center">
+                    <header class=" text-[#FFF] font-bold text-xl mb-8">Support</header>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1 ">Help Center</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">FAQ</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">Ticket Support</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">Contact Us</a>
+                </nav>
+            </div>
+            <nav class="w-full">
+                <header class=" text-center w-full    text-[#FFF] lg:text-center font-bold text-xl mb-7">Services
+                </header>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Academy</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Group
+                    Lesson</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Private
+                    Lesson</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Hockeys for
+                    kids</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Hockeys for
+                    Adult</a>
+            </nav>
+        </footer>
+
+    </footer>
+
+
+    <!-- register js -->
+
+    <script src="register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobster</title>
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- tailwind an daisy UI -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- icons -->
+
+    <script src="https://kit.fontawesome.com/7ff9b0e562.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="poppins-font bg-gradient-to-t from-[#3D52A1] to-[#EFE9F3]" id="home">
+
+    <!-- header -->
+
+    <header class="lg:ml-20 ml-4 lg:mr-20 mr-4">
+
+        <!-- nav section -->
+
+        <div class="navbar bg-opacity-90 ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-black">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] flex justify-center text-black items-center p-5 shadow bg-base-100 rounded-box w-64 text-lg font-bold">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="job.html">Job Info</a></li>
+                        <li><a href="education.html">Education</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assats/Logo.JPG" class="h-10" alt="">
+                </div>
+                <!-- <a class="ml-2 text-2xl font-extrabold">Jobster</a> -->
+            </div>
+            <div class="navbar-center hidden text-black lg:flex">
+                <ul class="menu text-black menu-horizontal px-1 text-lg font-bold">
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="index.html">Home</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="about.html">About</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="job.html">Job Info</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a
+                            href="education.html">Education</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-4">
+                <a href="login.html" class="btn font-bold bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white">Log
+                    in</a>
+            </div>
+        </div>
+
+        <!-- hero section -->
+
+        <div class="hero lg:h-96 h-80 lg:mt-2 mt-4" style="background-image: url(assats/cover.jpg);">
+            <div class="hero-overlay bg-opacity-70"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                    <h1 class="mb-5 lg:text-5xl text-white text-3xl font-bold">CareerConnect</h1>
+                    <p class="mb-5">Forget the old rules. You can have the best people. Right now. Right here.</p>
+                    <button
+                        class="btn btn-wide text-black  bg-gradient-to-l from-[#C2CCFF] to-[#E5EBF2] hover:bg-white"><i
+                            class="fa-solid fa-magnifying-glass"></i> Search</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- main -->
+
+    <main>
+
+        <!-- about section -->
+
+        <section
+            class="about mt-20 py-16 bg-gradient-to-r from-[#C2CCFF] to-[#EFE9F3] lg:ml-20 ml-4 lg:mr-20 mr-4 rounded-xl">
+
+            <div>
+                <h2 class="text-center lg:text-5xl text-[#102040] text-3xl font-extrabold">
+                    About Us
+                </h2>
+                <p class="mt-5 text-center px-5 lg:px-0">
+                    Welcome to Jobster, where education meets career advancement. Our platform is dedicated to bridging
+                    the gap between <br> academic achievement and professional success.
+                </p>
+            </div>
+
+            <div class="mt-20 lg:ml-20 ml-4 lg:mr-20  mr-4">
+
+                <div class="flex lg:flex-col flex-col justify-center items-center lg:gap-16 gap-10">
+                    <!-- card-1 -->
+                    <div class="lg:px-10 lg:py-10 bg-[#F1EAF4] rounded-xl">
+                        <div class="hero-content flex flex-col lg:flex-row-reverse lg:gap-40 gap-10">
+                            <div class="lg:w-1/3">
+                                <img src="assats/professions-avatars-line-banner-set_1284-34918.jpg"
+                                    class=" rounded-lg shadow-2xl" />
+                            </div>
+                            <div class="w-2/3 text-center lg:text-start">
+                                <h1 class="lg:text-5xl text-[#102040] text-3xl font-bold">Job Info</h1>
+                                <p class="py-6 lg:block hidden">Welcome to Jobster, your premier destination for finding
+                                    the perfect job. We are committed to connecting job seekers with top employers
+                                    across various industries. Our platform offers a user-friendly interface, extensive
+                                    job listings, and valuable career resources to help you navigate the job market and
+                                    achieve your professional goals. Whether you're just starting out or looking to
+                                    advance your career, Jobster is here to support you every step of the way.</p>
+                                <p class="py-6 lg:hidden block">
+                                    Welcome to Jobster, your premier destination for finding the perfect job. We are
+                                    committed to connecting job seekers with top employers across various industries.
+                                </p>
+                                <button class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white mb-6"><a
+                                        href="job.html">See more...</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+
+                    <div class="lg:px-10 lg:py-10 bg-[#F1EAF4] rounded-xl">
+                        <div class="hero-content flex flex-col lg:flex-row lg:gap-40 gap-10">
+                            <div class="lg:w-1/3">
+                                <img src="assats/education.jpg" class=" rounded-lg shadow-2xl" />
+                            </div>
+                            <div class="w-2/3 text-center lg:text-start">
+                                <h1 class="lg:text-5xl text-[#102040] text-3xl font-bold">Education</h1>
+                                <p class="py-6 lg:block hidden">Welcome to Jobster, your trusted partner in education.
+                                    Our mission is to provide students, educators, and lifelong learners with
+                                    high-quality resources, innovative learning tools, and insightful guidance. We are
+                                    dedicated to fostering academic excellence, personal growth, and a passion for
+                                    learning. Explore our comprehensive educational content, tailored to support your
+                                    journey towards knowledge and success.</p>
+                                <p class="py-6 lg:hidden block">
+                                    Welcome to Jobster, your trusted partner in education. Our mission is to provide
+                                    students, educators, and lifelong learners with high-quality resources, innovative
+                                    learning tools, and insightful guidance.</p>
+                                <button class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white mb-6"><a
+                                        href="education.html">See more...</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- contact section -->
+
+        <section class="contact mt-20 bg-[#EEE8F6] lg:ml-20 ml-4 lg:mr-20 mr-4 rounded-xl lg:p-16 py-10 lg:py-16">
+            <div>
+                <h2 class="text-center lg:text-5xl text-[#102040] text-3xl font-extrabold">
+                    Contact Us
+                </h2>
+            </div>
+
+            <div class="flex lg:flex-row flex-col justify-between items-center gap-10 mt-10">
+                <div class="w-1/2  ml-10">
+                    <img class="rounded-3xl" src="assats/contact.jpg" alt="">
+                </div>
+
+
+                <!-- massage box -->
+
+                <div id="WriteSms"
+                    class="border-2 lg:rounded-xl mt-20 p-10 lg:mb-20 lg:py-10 lg:w-1/2 w-full bg-white ">
+                    <div class="flex justify-center items-center">
+                        <div class="flex justify-center items-center lg:w-1/2 w-auto gap-5">
+                            <h3>
+                                Name:
+                            </h3>
+                            <input required type="text" placeholder="Type your name"
+                                class="input input-bordered w-full max-w-xs" />
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center mt-5">
+                        <div class="flex justify-center items-center lg:w-1/2 w-auto gap-5">
+                            <h3>
+                                Email:
+                            </h3>
+                            <input required type="text" placeholder="Type your email"
+                                class="input input-bordered w-full max-w-xs" />
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center mt-5">
+                        <input type="text" required id="MassageBox"
+                            class="textarea textarea-bordered lg:w-96 w-60 h-auto" placeholder="Massage...">
+
+                    </div>
+                    <div onClick="TakeMassage(event)" class="flex justify-center items-end mt-5">
+                        <button type="submit" class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+
+                <!-- show massage -->
+
+                <div id="ShowResponse"
+                    class=" flex flex-col p-5 lg:w-96 w-60 border-2 bg-white h-auto rounded-2xl hidden">
+                    <h2 class=" flex items-center justify-center  text-xl font-bold ml-4 mt-3">My response :</h2>
+                    <p id="ResponseMassage" class="mt-5 p-4 border-2 rounded-xl">
+
+                    </p>
+                    <div class=" flex justify-center items-center mt-6 gap-4 lg:gap-20">
+                        <div>
+
+                            <a href="index.html"><button
+                                    class="btn bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white">Back</button></a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Q & A -->
+
+        <section class="mt-20 ml-4 mr-4 lg:ml-52 lg:mr-52 bg-gradient-to-r from-[#C2CCFF] to-[#e7d4f4] p-10 rounded-xl">
+            <div>
+                <h2 class="text-center lg:text-5xl text-[#102040] text-3xl font-extrabold">
+                    Q&A
+                </h2>
+                <p class="mt-5 text-center px-5 lg:px-0">
+                    We'd love to hear from you! Whether you have questions, feedback, <br> or need assistance, our team
+                    is
+                    here to help.
+                </p>
+            </div>
+            <div class="mt-16">
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            How Can Jobstre help me find a job?
+                        </div>
+                        <div class="collapse-content">
+                            <p>We offer a comprehensive job board with listings from top employers, along with career
+                                advice and resume-building tools to help you stand out.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            What educational resources are available on your site?
+                        </div>
+                        <div class="collapse-content">
+                            <p>We offer a comprehensive job board with listings from top employers, along with career
+                                advice and resume-building tools to help you stand out.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Can Im get career advice and counseling through your website?
+                        </div>
+                        <div class="collapse-content">
+                            <p>Yes, we provide expert career advice through articles, webinars, and one-on-one
+                                counseling sessions.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            How would I sign up for updates on job posting and educational opportunities?
+                        </div>
+                        <div class="collapse-content">
+                            <p>Simply create an account on our website and subscribe to our newsletter to receive
+                                regular updates on the latest job postings and educational opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+
+        <!-- footer section -->
+
+        <footer
+            class=" pl-30 pr-30 pt-10 pb-10 lg:pl-36 footer bg-[#001529] text-base-content lg:flex lg:justify-between mt-10">
+            <aside class="w-full">
+                <h2 class="lg:text-3xl text-xl text-center w-full lg:text-left text-[#FFF] font-extrabold">
+                    Get In Touch
+                </h2>
+                <p class=" p-4 text-center w-full lg:text-left text-[#ffffff99] font-medium text-base mt-4">
+                    To connect with us, you can follow our facebook page, subscribe our youtube channel, follow us in
+                    insta
+                    and twitter.
+                    also ypu can share your experience in our email section.
+                </p>
+                <p class=" text-center w-full lg:text-left font-medium text-[#FFF] mt-6">
+                    <i class="fa-regular fa-envelope text-[#FF4240]"></i>
+                    ashikpullock99@gmail.com
+                </p>
+                <p class=" text-center w-full lg:text-left font-medium text-[#FFF] mt-3">
+                    <i class="fa-solid fa-phone text-[#FF4240]"></i>
+                    (+88) 01624-334044
+                </p>
+            </aside>
+            <div
+                class="w-full flex justify-evenly lg:justify-between  items-center md:justify-between flex-row xl:justify-between 2xl:justify-between">
+                <nav class=" flex flex-col justify-between items-center">
+                    <header class=" text-[#FFF] font-bold text-xl mb-7">Company</header>
+                    <a class="link link-hover font-medium text-[#ffffff99]">About us</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Leadership</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Careers</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">News & Article</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Legal Notice</a>
+                </nav>
+                <nav class=" flex flex-col justify-between items-center">
+                    <header class=" text-[#FFF] font-bold text-xl mb-8">Support</header>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1 ">Help Center</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">FAQ</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">Ticket Support</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">Contact Us</a>
+                </nav>
+            </div>
+            <nav class="w-full">
+                <header class=" text-center w-full    text-[#FFF] lg:text-center font-bold text-xl mb-7">Services
+                </header>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Academy</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Group
+                    Lesson</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Private
+                    Lesson</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Hockeys for
+                    kids</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Hockeys for
+                    Adult</a>
+            </nav>
+        </footer>
+
+    </footer>
+
+
+    <!-- js file -->
+
+    <script src="response.js"></script>
+
+    <!-- <script src="tailwind.config.js"></script> -->
+</body>
+
+</html>
